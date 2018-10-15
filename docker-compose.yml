@@ -21,5 +21,6 @@ services:
     environment:
       WIKI_ADMIN_EMAIL: heschlie@gmail.com
     volumes:
-      - /home/heschlie/projects/wikijs-docker/config.yml:/var/wiki/config.yml
-      - 
+      - /home/heschlie/projects/wikijs-compose/config.yml:/var/wiki/config.yml
+      - /home/heschlie/projects/wikijs-compose/.ssh/id_rsa:/etc/wiki/keys/git.pem
+
